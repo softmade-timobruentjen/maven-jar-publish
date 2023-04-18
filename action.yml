@@ -66,8 +66,8 @@ runs:
         release_name: Release ${{ github.repository }} v${{ steps.project.outputs.version }}
         body: ${{ inputs.body }}
         body_path: ${{ inputs.body-path }}
-        draft: ${{ inputs.draft }}
-        prerelease: ${{ inputs.pre-release }}
+        draft: false
+        prerelease: false
 
     - name: Upload Release jar
       id: upload-release-asset-jar
