@@ -60,7 +60,7 @@ runs:
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+      uses: actions/create-release@v1.1.4
       with:
         tag_name: ${{ steps.project.outputs.version }}
         release_name: Release ${{ github.repository }} v${{ steps.project.outputs.version }}
